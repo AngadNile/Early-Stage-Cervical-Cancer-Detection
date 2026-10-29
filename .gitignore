@@ -1,0 +1,108 @@
+# ===================================================
+# Cervical Cancer Detection Project - .gitignore
+# ===================================================
+
+# ------------------------------
+# 1. Environment & Secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+
+# ------------------------------
+# 2. Node / JavaScript / TypeScript
+# ------------------------------
+node_modules/
+*/node_modules/
+*/*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.vite/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ------------------------------
+# 3. Python & Virtual Environments
+# ------------------------------
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+Cancer_Detection_Model/Model/venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/
+
+# ------------------------------
+# 4. Large Dataset & Model Weights
+# (Uncomment or keep if tracking via Git LFS / external storage)
+# ------------------------------
+# Large dataset image folders (optional: keep if dataset should not be committed to GitHub)
+# Dataset/Test/
+# Dataset/Train/
+# Dataset/Validate/
+
+# Model files (heavy binaries > 100MB like .keras, .h5, .pt, .onnx)
+*.h5
+*.keras
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.weights
+*.bin
+
+# ------------------------------
+# 5. OS & IDE Metadata
+# ------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# VS Code / JetBrains / Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ------------------------------
+# 6. Temporary & Cache Files
+# ------------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+tmp/
+temp/
+.temp/

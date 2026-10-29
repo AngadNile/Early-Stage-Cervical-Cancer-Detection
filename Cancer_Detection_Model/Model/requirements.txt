@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+flask
+flask-cors
+tensorflow
+pillow
+numpy
+requests
